@@ -15,10 +15,6 @@
                     <label>Nombre</label>
                     <input clas="form-control" id="nombre" name="nombre" type="text" autofocus require />
                 </div>
-
-                <div class="col-12 col-sm-6">
-                    <label>Nombre</label>
-                    <input clas="form-control" id="nombre" name="nombre" type="text"  require />
                 </div>
 
                 <a href="<?php echo base_url(); ?>/categorias" class="btn btn-primary">Regresar</a>
