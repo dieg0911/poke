@@ -1,0 +1,83 @@
+CRITICAL - 2022-12-14 02:15:12 --> Invalid file: categorias.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('categorias', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(10): view('categorias')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 02:15:29 --> Invalid file: categorias.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('categorias', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(10): view('categorias')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 02:15:30 --> Invalid file: categorias.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('categorias', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(10): view('categorias')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 02:15:39 --> Invalid file: categorias.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('categorias', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(10): view('categorias')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 02:15:42 --> Invalid file: categorias.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('categorias', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(10): view('categorias')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 02:18:08 --> Cannot declare class App\Controllers\CategoriasController, because the name is already in use
+in APPPATH\Views\categorias\categorias.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-14 02:23:26 --> Class "App\Models\CategoriasModel" not found
+in APPPATH\Controllers\CategoriasController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\CategoriasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 02:23:33 --> Class "App\Models\CategoriasModel" not found
+in APPPATH\Controllers\CategoriasController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\CategoriasController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 02:24:37 --> Call to undefined method App\Models\CategoriasModel::while
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\CategoriasController.php(19): CodeIgniter\Model->__call('while', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 02:27:44 --> Call to undefined method App\Models\CategoriasModel::while
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\CategoriasController.php(19): CodeIgniter\Model->__call('while', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 02:33:29 --> Invalid file: categorias.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('categorias', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(23): view('categorias', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
