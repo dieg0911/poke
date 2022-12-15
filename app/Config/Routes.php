@@ -38,6 +38,9 @@ $routes->set404Override();
 //                 clase::metodo
 $routes->get('/', 'Home::index');
 $routes->get('/categorias', 'CategoriasController::index');
+$routes->get('/productos', 'ProductosController::index');
+
+//CRUD CATEGORIAS
 // vista de la tabla de categorias y eliminados
 $routes->get('dataTable', 'InventarioController::index');
 $routes->get('categorias/eliminados', 'CategoriasController::eliminados');
@@ -48,7 +51,13 @@ $routes->post('insert-form', 'CategoriasController::insertar');
 $routes->get('editar-form/(:num)', 'CategoriasController::editar/$1');
 $routes->post('actualizar', 'CategoriasController::actualizar');
 $routes->get('eliminar/(:num)', 'CategoriasController::eliminar/$1');
-//$routes->get('unidades/eliminar/(:num)', 'Unidades::eliminar/$1');
+$routes->get('reingresar/(:num)', 'CategoriasController::reingresar/$1');
+
+//CRUD productos
+// vista de la tabla de productos y eliminados
+$routes->get('productos/eliminados', 'ProductosController::eliminados');
+//agregar y guardar crud productos
+$routes->get('productos-form', 'ProductosController::nuevo');
 
 
 
@@ -71,15 +80,3 @@ $routes->get('eliminar/(:num)', 'CategoriasController::eliminar/$1');
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
-
-/*
-$routes->get('/', 'Home::index');
-$routes->get('unidades', 'Unidades::index');
-$routes->get('unidades/eliminados', 'Unidades::eliminados');
-$routes->get('unidades/nuevo', 'Unidades::nuevo');
-$routes->post('unidades/insertar', 'Unidades::insertar');
-$routes->get('unidades/editar/(:num)', 'Unidades::editar/$1');
-$routes->post('unidades/actualizar', 'Unidades::actualizar');
-$routes->get('unidades/eliminar/(:num)', 'Unidades::eliminar/$1');
-$routes->get('unidades/reingresar/(:num)', 'Unidades::reingresar/$1');
-*/
