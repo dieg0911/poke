@@ -4,11 +4,12 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800"><?php echo $titulo ?></h1>
+    <h1 class="h3 mb-2 text-gray-800">Productos</h1>
 
     <div>
         <p>
-            <a href="<?php echo base_url(); ?>/categorias" class="btn btn-warning">Categorias</a>
+            <a href="<?php echo site_url('/productos-form') ?>" class="btn btn-info">Agregar </a>
+            <a href="<?php echo base_url(); ?>/productos/eliminados" class="btn btn-danger">Eliminados </a>
         </p>
     </div>
 
@@ -30,8 +31,11 @@
                             <td><?php echo $dato['id']; ?></td>
                             <td><?php echo $dato['nombre']; ?></td>
                             <td>
-                                <a href="<?php echo site_url('reingresar/'. $dato['id']); ?>" class="btn btn-success"><i class="fas fa-trash-restore"></i></a>
+                                <a href="<?php echo site_url('editar-form/'. $dato['id']); ?>" class="btn btn-success">Editar<i class="fas fa-pencil-alt"></i></a>
+                                <a href="<?php echo site_url('eliminar/'. $dato['id']); ?>" class="btn btn-danger">Borrar<i class="fas fa-trash-alt"></i></a>
                             </td>
+
+
                         </tr>
                         <?php ; }?>
                     </tbody>

@@ -5,6 +5,7 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800"><?php echo $titulo ?></h1>
+
     <form method="POST" action=" <?php echo site_url('/insert-form'); ?>" autocomplete="off">
 
         <div class="form-group">
@@ -19,6 +20,7 @@
             <button type="submit" class="btn btn-success"> Guardar </button>
             <a href="<?php echo base_url(); ?>/categorias" class="btn btn-primary">Regresar</a>
         </div>
+
     </form>
 </div>
 <!-- /.container-fluid -->

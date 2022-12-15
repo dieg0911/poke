@@ -46,18 +46,11 @@ class CategoriasController extends BaseController
     
     public function insertar()
     {
-        $userModel = new CategoriasModel();
-        $this->categorias->save(['nombre' => $this->request->getPost('nombre')]);
+        $this->categorias->save(['nombre' => $this->request->getPost('nombre'), ]);
         return redirect()->to(base_url().'/categorias');
+        
     }
 
-    /*public function singleUser($id = null)
-    {
-        $userModel = new CategoriasModel();
-        $data['user_obj'] = $userModel->where('id', $id)->first();
-        
-        return view('editar', $data);
-    }*/
 
     public function editar($id)
     {
@@ -81,6 +74,11 @@ class CategoriasController extends BaseController
         return redirect()->to(base_url().'/categorias');
     }
 
+    public function reingresar($id)
+    {
+        $this->categorias->update($id,['activo' => 1]);
+        return redirect()->to(base_url().'/categorias');
+    }
 
 
 
