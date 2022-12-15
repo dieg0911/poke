@@ -42,6 +42,12 @@ $routes->get('/categorias', 'CategoriasController::index');
 $routes->get('dataTable', 'InventarioController::index');
 $routes->get('categorias-form', 'CategoriasController::nuevo');
 $routes->post('insert-form', 'CategoriasController::insertar');
+//$routes->get('unidades/editar/(:num)', 'Unidades::editar/$1');
+//$routes->post('unidades/actualizar', 'Unidades::actualizar');
+$routes->get('editar-form/(:num)', 'CategoriasController::editar/$1');
+$routes->post('actualizar', 'CategoriasController::actualizar');
+
+
 //
 //
 /*

@@ -31,9 +31,11 @@
                             <td><?php echo $dato['id']; ?></td>
                             <td><?php echo $dato['nombre']; ?></td>
                             <td>
-                                <a href="<?php echo base_url(); ?>/categorias/editar/" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
+                                <a href="<?php echo site_url('editar-form/'. $dato['id']); ?>" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
                                 <a href="<?php echo base_url(); ?>/categorias/eliminar/" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
                             </td>
+
+
                         </tr>
                         <?php ; }?>
                     </tbody>

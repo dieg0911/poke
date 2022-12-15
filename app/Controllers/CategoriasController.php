@@ -41,6 +41,14 @@ class CategoriasController extends BaseController
         return redirect()->to(base_url().'/categorias');
     }
 
+    /*public function singleUser($id = null)
+    {
+        $userModel = new CategoriasModel();
+        $data['user_obj'] = $userModel->where('id', $id)->first();
+        
+        return view('editar', $data);
+    }*/
+
     public function editar($id)
     {
         $categoria = $this->categorias->where('id',$id)->first();
@@ -50,6 +58,21 @@ class CategoriasController extends BaseController
         echo view('categorias/editar',$data);
         echo view('footer');
     }
+
+    public function actualizar()
+    {
+        $this->categorias->update($this->request->getPost('id'),['nombre' => $this->request->getPost('nombre')]);
+        return redirect()->to(base_url().'/categorias');
+    }
+
+    public function eliminar($id)
+    {
+        $this->categorias->update($id,['activo' => 0]);
+        return redirect()->to(base_url().'/categorias');
+    }
+
+
+
 
 }
 

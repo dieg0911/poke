@@ -144,3 +144,124 @@ in APPPATH\Views\categorias\categorias.php on line 37.
  5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
  6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 20:56:06 --> syntax error, unexpected identifier "id", expecting ")"
+in APPPATH\Views\categorias\categorias.php on line 34.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('categorias/categorias', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(23): view('categorias/categorias', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 22:39:16 --> Undefined variable $user_obj
+in APPPATH\Views\categorias\editar.php on line 15.
+ 1 APPPATH\Views\categorias\editar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_obj', 'APPPATH\\Views\\categorias\\editar.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\categorias\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('categorias/editar', [], true)
+ 5 APPPATH\Controllers\CategoriasController.php(50): view('categorias/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 22:50:04 --> Undefined variable $user_obj
+in APPPATH\Views\categorias\editar.php on line 15.
+ 1 APPPATH\Views\categorias\editar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_obj', 'APPPATH\\Views\\categorias\\editar.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\categorias\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('categorias/editar', [], true)
+ 5 APPPATH\Controllers\CategoriasController.php(58): view('categorias/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 22:52:12 --> Invalid file: edit_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('edit_view', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('edit_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 22:52:15 --> Invalid file: edit_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('edit_view', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('edit_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 22:54:46 --> Invalid file: edit_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('edit_view', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('edit_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 22:55:08 --> Invalid file: editar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editar.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('editar', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 22:55:11 --> Invalid file: editar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editar.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('editar', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 22:57:46 --> Invalid file: editar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editar.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('editar', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:00:22 --> Invalid file: editar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editar.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('editar', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:00:24 --> Invalid file: editar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editar.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('editar', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:04:49 --> Invalid file: editar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editar.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('editar', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:05:49 --> Invalid file: editar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editar.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('editar', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(49): view('editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CategoriasController->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
