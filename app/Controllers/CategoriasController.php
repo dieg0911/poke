@@ -24,6 +24,16 @@ class CategoriasController extends BaseController
         echo view('footer');
     }
 
+    public function eliminados($activo = 0)
+    {
+        $categorias = $this->categorias->where('activo',$activo)->findALL();
+        $data = ['titulo' => 'Categorias Eliminados', 'datos' => $categorias];
+
+        echo view('header');
+        echo view('categorias/eliminados',$data);
+        echo view('footer');
+    }
+
     public function nuevo()
     {
         $data = ['titulo' => 'Agregar Categorias'];

@@ -38,14 +38,18 @@ $routes->set404Override();
 //                 clase::metodo
 $routes->get('/', 'Home::index');
 $routes->get('/categorias', 'CategoriasController::index');
-//
+// vista de la tabla de categorias y eliminados
 $routes->get('dataTable', 'InventarioController::index');
+$routes->get('categorias/eliminados', 'CategoriasController::eliminados');
+//agregar y guardar crud categorias
 $routes->get('categorias-form', 'CategoriasController::nuevo');
 $routes->post('insert-form', 'CategoriasController::insertar');
-//$routes->get('unidades/editar/(:num)', 'Unidades::editar/$1');
-//$routes->post('unidades/actualizar', 'Unidades::actualizar');
+// editar actualizar eliminar crud categorias
 $routes->get('editar-form/(:num)', 'CategoriasController::editar/$1');
 $routes->post('actualizar', 'CategoriasController::actualizar');
+$routes->get('eliminar/(:num)', 'CategoriasController::eliminar/$1');
+//$routes->get('unidades/eliminar/(:num)', 'Unidades::eliminar/$1');
+
 
 
 //
