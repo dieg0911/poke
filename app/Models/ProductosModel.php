@@ -12,7 +12,7 @@ class ProductosModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['codigo_producto','nombre_producto','detalle_producto','precio_venta','precio_costo','stock_producto','id_categoria','activo','fecha_creado','fecha_update'];
+    protected $allowedFields = ['codigo_producto', 'nombre_producto', 'detalle_producto', 'precio_venta', 'precio_compra', 'stock_producto', 'stock_minimo', 'id_categoria','activo'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'fecha_creado';

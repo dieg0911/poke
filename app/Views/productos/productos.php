@@ -21,15 +21,24 @@
                     <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Codigo</th>
                             <th>Nombre</th>
-                            <th>Acciones</th>
+                            <th>Detalle</th>
+                            <th>Precio</th>
+                            <th>Existencias</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach($datos as $dato) { ?>
                         <tr>
                             <td><?php echo $dato['id']; ?></td>
-                            <td><?php echo $dato['nombre']; ?></td>
+                            <td><?php echo $dato['codigo_producto']; ?></td>
+                            <td><?php echo $dato['nombre_producto']; ?></td>
+                            <td><?php echo $dato['detalle_producto']; ?></td>
+                            <td><?php echo $dato['precio']; ?></td>
+                            <td><?php echo $dato['existencias']; ?></td>
                             <td>
                                 <a href="<?php echo site_url('editar-form/'. $dato['id']); ?>" class="btn btn-success">Editar<i class="fas fa-pencil-alt"></i></a>
                                 <a href="<?php echo site_url('eliminar/'. $dato['id']); ?>" class="btn btn-danger">Borrar<i class="fas fa-trash-alt"></i></a>

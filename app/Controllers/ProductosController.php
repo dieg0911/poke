@@ -46,7 +46,7 @@ class ProductosController extends BaseController
     
     public function insertar()
     {
-        $this->productos->save(['nombre' => $this->request->getPost('nombre'), ]);
+        $this->productos->save(['codigo_producto' => $this->request->getPost('nombre'), ]);
         return redirect()->to(base_url().'/productos');
     }
 
