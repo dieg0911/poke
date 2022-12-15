@@ -3,6 +3,8 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\ProductosModel;
+use App\Models\CategoriasModel;
+
 
 class ProductosController extends BaseController
 
@@ -12,6 +14,7 @@ class ProductosController extends BaseController
     public function __construct()
     {
         $this->productos = new ProductosModel();
+        $this->categorias = new CategoriasModel();
     }
 
     public function index($activo = 1)
@@ -36,7 +39,10 @@ class ProductosController extends BaseController
 
     public function nuevo()
     {
-        $data = ['titulo' => 'Agregar Producto'];
+        $categorias = $this->categorias->where('activo',1)->findALL();
+
+
+        $data = ['titulo' => 'Agregar Producto', 'categorias' => $categorias];
 
         echo view('header');
         echo view('productos/nuevo',$data);
@@ -46,7 +52,14 @@ class ProductosController extends BaseController
     
     public function insertar()
     {
-        $this->productos->save(['codigo_producto' => $this->request->getPost('nombre'), ]);
+        $this->productos->save([
+            'codigo_producto' => $this->request->getPost('codigo_producto'),
+            'nombre_producto' => $this->request->getPost('nombre_producto'),
+            'detalle_producto' => $this->request->getPost('detalle_producto'),
+            'precio_venta' => $this->request->getPost('precio_venta'),
+            'precio_compra' => $this->request->getPost('precio_compra'),
+            'stock_producto' => $this->request->getPost('stock_producto'),
+        ]);
         return redirect()->to(base_url().'/productos');
     }
 

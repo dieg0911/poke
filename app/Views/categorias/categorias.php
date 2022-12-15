@@ -22,7 +22,8 @@
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>
-                            <th>Acciones</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,9 +31,13 @@
                         <tr>
                             <td><?php echo $dato['id']; ?></td>
                             <td><?php echo $dato['nombre']; ?></td>
+
                             <td>
-                                <a href="<?php echo site_url('editar-form/'. $dato['id']); ?>" class="btn btn-success">Editar<i class="fas fa-pencil-alt"></i></a>
-                                <a href="<?php echo site_url('eliminar/'. $dato['id']); ?>" class="btn btn-danger">Borrar<i class="fas fa-trash-alt"></i></a>
+                            <a href="<?php echo site_url('editar-form/'. $dato['id']); ?>" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
+                            </td>
+
+                            <td>
+                                <a href="<?php echo site_url('eliminar/'. $dato['id']); ?>" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
                             </td>
 
 

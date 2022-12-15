@@ -37,8 +37,8 @@
                             <td><?php echo $dato['codigo_producto']; ?></td>
                             <td><?php echo $dato['nombre_producto']; ?></td>
                             <td><?php echo $dato['detalle_producto']; ?></td>
-                            <td><?php echo $dato['precio']; ?></td>
-                            <td><?php echo $dato['existencias']; ?></td>
+                            <td><?php echo $dato['precio_venta']; ?></td>
+                            <td><?php echo $dato['stock_producto']; ?></td>
                             <td>
                                 <a href="<?php echo site_url('editar-form/'. $dato['id']); ?>" class="btn btn-success">Editar<i class="fas fa-pencil-alt"></i></a>
                                 <a href="<?php echo site_url('eliminar/'. $dato['id']); ?>" class="btn btn-danger">Borrar<i class="fas fa-trash-alt"></i></a>
