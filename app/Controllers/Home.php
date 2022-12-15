@@ -2,14 +2,6 @@
 
 namespace App\Controllers;
 
-
-
-
-// XD
-
-
-
-
 class Home extends BaseController
 {
     public function index()

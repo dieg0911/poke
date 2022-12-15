@@ -8,7 +8,7 @@
 
     <div>
         <p>
-            <a href="<?php echo base_url(); ?>/nuevo" class="btn btn-info">Agregar </a>
+            <a href="<?php echo site_url('/categorias-form') ?>" class="btn btn-info">Agregar </a>
             <a href="<?php echo base_url(); ?>/categorias/nuevo" class="btn btn-warning">Eliminar </a>
         </p>
     </div>
@@ -22,17 +22,20 @@
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>
-                            <th></th>
-                            <th></th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach($datos as $dato) { ?>
+                        <tr>
                             <td><?php echo $dato['id']; ?></td>
                             <td><?php echo $dato['nombre']; ?></td>
-                            <td><a href="<?php echo base_url(); ?>/categorias/editar/" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a></td>
-                            <td><a href="<?php echo base_url(); ?>/categorias/eliminar/" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a></td>
-                        <?php } ?>
+                            <td>
+                                <a href="<?php echo base_url(); ?>/categorias/editar/" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
+                                <a href="<?php echo base_url(); ?>/categorias/eliminar/" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+                        <?php ; }?>
                     </tbody>
                 </table>
             </div>

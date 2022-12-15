@@ -26,10 +26,28 @@ class CategoriasController extends BaseController
 
     public function nuevo()
     {
-        $data = ['titulo' => 'Agregar categoria'];
+        $data = ['titulo' => 'Agregar Categorias'];
 
         echo view('header');
         echo view('categorias/nuevo',$data);
+        echo view('footer');
+    }
+
+    
+    public function insertar()
+    {
+        $userModel = new CategoriasModel();
+        $this->categorias->save(['nombre' => $this->request->getPost('nombre')]);
+        return redirect()->to(base_url().'/categorias');
+    }
+
+    public function editar($id)
+    {
+        $categoria = $this->categorias->where('id',$id)->first();
+        $data = ['titulo' => 'Editar Categorias', 'datos' => $categoria];
+
+        echo view('header');
+        echo view('categorias/editar',$data);
         echo view('footer');
     }
 

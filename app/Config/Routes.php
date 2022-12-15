@@ -25,7 +25,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-$routes->setAutoRoute(true);
+//$routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -38,7 +38,13 @@ $routes->setAutoRoute(true);
 //                 clase::metodo
 $routes->get('/', 'Home::index');
 $routes->get('/categorias', 'CategoriasController::index');
-$routes->get('nuevo', 'CategoriasController::nuevo');
+//
+$routes->get('dataTable', 'InventarioController::index');
+$routes->get('categorias-form', 'CategoriasController::nuevo');
+$routes->post('insert-form', 'CategoriasController::insertar');
+//
+//
+/*
 /*
  * --------------------------------------------------------------------
  * Additional Routing
@@ -55,3 +61,15 @@ $routes->get('nuevo', 'CategoriasController::nuevo');
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+
+/*
+$routes->get('/', 'Home::index');
+$routes->get('unidades', 'Unidades::index');
+$routes->get('unidades/eliminados', 'Unidades::eliminados');
+$routes->get('unidades/nuevo', 'Unidades::nuevo');
+$routes->post('unidades/insertar', 'Unidades::insertar');
+$routes->get('unidades/editar/(:num)', 'Unidades::editar/$1');
+$routes->post('unidades/actualizar', 'Unidades::actualizar');
+$routes->get('unidades/eliminar/(:num)', 'Unidades::eliminar/$1');
+$routes->get('unidades/reingresar/(:num)', 'Unidades::reingresar/$1');
+*/
