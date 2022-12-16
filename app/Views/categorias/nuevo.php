@@ -5,6 +5,14 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800"><?php echo $titulo ?></h1>
+
+    <?php if (isset($validation)) { ?>
+        <div class="alert alert-danger">
+            <?php echo $validation->listErrors(); ?>
+        </div>
+    <?php } ?>
+
+    <p class="mb-4">En esta sección podras agregar una nueva categoria.</p>
     <form method="POST" action=" <?php echo site_url('/insert-form'); ?>" autocomplete="off">
 
         <div class="form-group">
@@ -12,13 +20,15 @@
 
                 <div class="col-12 col-sm-6">
                     <label>Nombre</label>
-                    <input clas="form-control" id="nombre" name="nombre" type="text" autofocus require />
+                    <input class="form-control" id="nombre" name="nombre" type="text" value="<?php echo set_value('nombre') ?>" autofocus required />
                 </div>
 
             </div>
-            <button type="submit" class="btn btn-success"> Guardar </button>
-            <a href="<?php echo base_url(); ?>/categorias" class="btn btn-primary">Regresar</a>
+
         </div>
+
+                    <button type="submit" class="btn btn-success"> Guardar </button>
+            <a href="<?php echo base_url(); ?>/categorias" class="btn btn-primary">Regresar</a>
     </form>
 </div>
 <!-- /.container-fluid -->

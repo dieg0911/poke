@@ -8,10 +8,22 @@ class CategoriasController extends BaseController
 
 {
     protected $categorias;
+    protected $reglas;
 
     public function __construct()
     {
         $this->categorias = new CategoriasModel();
+        helper(['form']);
+        
+        $this->reglas = [
+            'nombre' => [
+                'rules' => 'required|is_unique[categorias.nombre]',
+                'errors' => [
+                    'required' => 'El campo {field} es obligatorio.',
+                    'is_unique' => 'El campo {field} debe ser unico.'
+                ]
+            ]
+        ];
     }
 
     public function index($activo = 1)
@@ -36,6 +48,7 @@ class CategoriasController extends BaseController
 
     public function nuevo()
     {
+        
         $data = ['titulo' => 'Agregar Categorias'];
 
         echo view('header');
@@ -46,9 +59,20 @@ class CategoriasController extends BaseController
     
     public function insertar()
     {
-        $this->categorias->save(['nombre' => $this->request->getPost('nombre'), ]);
-        return redirect()->to(base_url().'/categorias');
-        
+        if($this->request->getMethod() == "post" && $this->validate($this->reglas))
+        {
+            $this->categorias->save([
+                'nombre' => $this->request->getPost('nombre')
+            ]);
+            return redirect()->to(base_url().'/categorias');
+        }
+        else
+        {
+            $data = ['titulo' => 'Agregar Categorias', 'validation' => $this->validator];
+            echo view('header');
+            echo view('categorias/nuevo',$data);
+            echo view('footer');
+        }
     }
 
 
