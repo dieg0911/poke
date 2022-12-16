@@ -48,8 +48,8 @@
 }
 
 html {
-  font-family: sans-serif;
-  line-height: 1.15;
+  font-family: Helvetica;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -64,9 +64,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #858796;
-  text-align: left;
-  background-color: #fff;
+  color: #535566;
+  text-align: center;
+  background-color: rgb(214, 148, 148);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -117,11 +117,11 @@ ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-bottom: 0;
+  margin-bottom: 12;
 }
 
 dt {
-  font-weight: 700;
+  font-weight: 760;
 }
 
 dd {
@@ -139,13 +139,13 @@ strong {
 }
 
 small {
-  font-size: 80%;
+  font-size: 75%;
 }
 
 sub,
 sup {
-  position: relative;
-  font-size: 75%;
+  position: absolute;
+  font-size: 85%;
   line-height: 0;
   vertical-align: baseline;
 }
