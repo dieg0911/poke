@@ -50,8 +50,6 @@ class ProductosController extends BaseController
     
     public function insertar()
     {
-
-
             $this->productos->save([
                 'codigo_producto' => $this->request->getPost('codigo_producto'),
                 'nombre_producto' => $this->request->getPost('nombre_producto'),
@@ -68,9 +66,10 @@ class ProductosController extends BaseController
 
     public function editar($id)
     {
-        $categorias = $this->categorias->where('activo',1)->findALL();
         $producto = $this->productos->where('id',$id)->first();
-        $data = ['titulo' => 'Editar Productos', 'datos' => $producto];
+        $categorias = $this->categorias->where('activo',1)->findALL();
+        $data = ['titulo' => 'Editar Producto', 'datos' => $producto,
+                 'categorias' => $categorias];
 
         echo view('header');
         echo view('productos/editar',$data);
@@ -79,7 +78,16 @@ class ProductosController extends BaseController
 
     public function actualizar()
     {
-        $this->productos->update($this->request->getPost('id'),['nombre' => $this->request->getPost('nombre')]);
+        $this->productos->update($this->request->getPost('id'),[
+            'codigo_producto' => $this->request->getPost('codigo_producto'),
+            'nombre_producto' => $this->request->getPost('nombre_producto'),
+            'detalle_producto' => $this->request->getPost('detalle_producto'),
+            'precio_venta' => $this->request->getPost('precio_venta'),
+            'precio_compra' => $this->request->getPost('precio_compra'),
+            'stock_producto' => $this->request->getPost('stock_producto'),
+            'stock_minimo' => $this->request->getPost('stock_minimo'),
+            'id_categoria' => $this->request->getPost('id_categoria'),
+        ]);
         return redirect()->to(base_url().'/productos');
     }
 

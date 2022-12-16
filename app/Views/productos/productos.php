@@ -27,8 +27,8 @@
                             <th>Precio</th>
                             <th>Stock</th>
                             <th>Stock Minimo</th>
-                            <th></th>
-                            <th></th>
+                            <th>Editar</th>
+                            <th>Borrar</th>
                         </tr>
                     </thead>
 
@@ -44,11 +44,17 @@
                             <td><?php echo $dato['stock_minimo']; ?></td>
 
                             <td>
-                                <a href="<?php echo site_url('editar/'. $dato['id']); ?>" class="btn btn-success">Editar<i class="fas fa-edit"></i></a>
+                            <a href="<?php echo site_url('editar/'. $dato['id']); ?>" class="btn btn-success">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-edit"></i>
+                                        </span>
+                                        <span class="text">Editar</span>
+                                    </a>
+
                             </td>
 
                             <td>
-                                <a href="<?php echo site_url('eliminar/'. $dato['id']); ?>" class="btn btn-danger">Borrar<i class="fas fa-trash-alt"></i></a>
+                                <a href="<?php echo site_url('eliminarp/'. $dato['id']); ?>" class="btn btn-danger">Borrar<i class="fas fa-trash-alt"></i></a>
                             </td>
 
 

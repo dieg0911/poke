@@ -61,10 +61,10 @@ $routes->get('productos/eliminados', 'ProductosController::eliminados');
 $routes->get('/productos-form', 'ProductosController::nuevo');
 $routes->post('insertp-form', 'ProductosController::insertar');
 // editar actualizar eliminar crud productos
-$routes->get('editar-form/(:num)', 'ProductosController::editar/$1');
-$routes->post('actualizar', 'ProductosController::actualizar');
-$routes->get('eliminar/(:num)', 'ProductosController::eliminar/$1');
-$routes->get('reingresar/(:num)', 'ProductosController::reingresar/$1');
+$routes->get('editar/(:num)', 'ProductosController::editar/$1');
+$routes->post('actualizarp', 'ProductosController::actualizar');
+$routes->get('eliminarp/(:num)', 'ProductosController::eliminar/$1');
+$routes->get('reingresarp/(:num)', 'ProductosController::reingresar/$1');
 
 //Rutas para el login
 $routes->get('/', 'SigninController::index');

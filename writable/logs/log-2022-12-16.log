@@ -1,0 +1,22 @@
+CRITICAL - 2022-12-16 00:22:09 --> Undefined array key "nombre"
+in APPPATH\Views\productos\eliminados.php on line 31.
+ 1 APPPATH\Views\productos\eliminados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'APPPATH\\Views\\productos\\eliminados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\productos\\eliminados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/eliminados', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(36): view('productos/eliminados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductosController->eliminados()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 00:23:33 --> Undefined array key "nombre"
+in APPPATH\Views\productos\eliminados.php on line 31.
+ 1 APPPATH\Views\productos\eliminados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'APPPATH\\Views\\productos\\eliminados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\productos\\eliminados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/eliminados', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(36): view('productos/eliminados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductosController->eliminados()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

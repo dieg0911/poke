@@ -8,7 +8,7 @@
 
     <div>
         <p>
-            <a href="<?php echo base_url(); ?>/categorias" class="btn btn-warning">Categorias</a>
+            <a href="<?php echo base_url(); ?>/productos" class="btn btn-warning">Productos</a>
         </p>
     </div>
 
@@ -18,9 +18,13 @@
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
-                        <tr>
-                            <th>ID</th>
+                    <th>ID</th>
+                            <th>Codigo</th>
                             <th>Nombre</th>
+                            <th>Detalle</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Stock Minimo</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -28,9 +32,14 @@
                         <?php foreach($datos as $dato) { ?>
                         <tr>
                             <td><?php echo $dato['id']; ?></td>
-                            <td><?php echo $dato['nombre']; ?></td>
+                            <td><?php echo $dato['codigo_producto']; ?></td>
+                            <td><?php echo $dato['nombre_producto']; ?></td>
+                            <td><?php echo $dato['detalle_producto']; ?></td>
+                            <td><?php echo $dato['precio_venta']; ?></td>
+                            <td><?php echo $dato['stock_producto']; ?></td>
+                            <td><?php echo $dato['stock_minimo']; ?></td>
                             <td>
-                                <a href="<?php echo site_url('reingresar/'. $dato['id']); ?>" class="btn btn-success"><i class="fas fa-trash-restore"></i></a>
+                                <a href="<?php echo site_url('reingresarp/'. $dato['id']); ?>" class="btn btn-success"><i class="fas fa-trash-restore"></i></a>
                             </td>
                         </tr>
                         <?php ; }?>
