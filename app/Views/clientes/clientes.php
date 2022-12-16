@@ -40,7 +40,7 @@
                             <td><?php echo $dato['email']; ?></td>
 
                             <td>
-                            <a href="<?php echo site_url('editac/'. $dato['id']); ?>" class="btn btn-success">
+                            <a href="<?php echo site_url('editarc/'. $dato['id']); ?>" class="btn btn-success">
                                         <span class="icon text-white-50">
                                             <i class="fas fa-edit"></i>
                                         </span>

@@ -40,6 +40,7 @@ $routes->set404Override();
 $routes->get('/inicio', 'Home::index');
 $routes->get('/categorias', 'CategoriasController::index');
 $routes->get('/productos', 'ProductosController::index');
+$routes->get('/clientes', 'ClientesController::index');
 
 //Rutas para el login
 $routes->get('/', 'SigninController::index');
@@ -75,9 +76,17 @@ $routes->get('eliminarp/(:num)', 'ProductosController::eliminar/$1');
 $routes->get('reingresarp/(:num)', 'ProductosController::reingresar/$1');
 
 //ruta para cliente
-$routes->get('/clientes', 'ClientesController::index');
+// vista de la tabla de clientes y eliminados
+$routes->get('clientes/eliminados', 'ClientesController::eliminados');
+//agregar y guardar crud clientes
 $routes->get('/clientes-form', 'ClientesController::nuevo');
 $routes->post('insertc-form', 'ClientesController::insertar');
+// editar actualizar eliminar crud clientes
+$routes->get('editarc/(:num)', 'ClientesController::editar/$1');
+$routes->post('actualizarc', 'ClientesController::actualizar');
+$routes->get('eliminarc/(:num)', 'ClientesController::eliminar/$1');
+$routes->get('reingresarc/(:num)', 'ClientesController::reingresar/$1');
+
 
 
 //

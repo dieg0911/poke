@@ -58,6 +58,7 @@ class ClientesController extends BaseController
         $clientes = $this->clientes->where('activo',$activo)->findALL();
         $data = ['titulo' => 'Clientes', 'datos' => $clientes];
 
+
         echo view('header');
         echo view('clientes/clientes',$data);
         echo view('footer');
@@ -75,7 +76,7 @@ class ClientesController extends BaseController
 
     public function nuevo()
     {
-        $data = ['titulo' => 'Agregar Cliente'];
+        $data = ['titulo' => 'Agregar Cliente', 'validation' => $this->validator];
 
         echo view('header');
         echo view('clientes/nuevo',$data);
@@ -97,9 +98,7 @@ class ClientesController extends BaseController
         }
         else
         {
-            $categorias = $this->categorias->where('activo',1)->findALL();
-            $data = ['titulo' => 'Agregar Producto', 'categorias' => $categorias,
-                     'validation' => $this->validator];
+            $data = ['titulo' => 'Agregar Cliente', 'validation' => $this->validator];
 
             echo view('header');
             echo view('clientes/nuevo',$data);
@@ -111,9 +110,7 @@ class ClientesController extends BaseController
     public function editar($id)
     {
         $cliente = $this->clientes->where('id',$id)->first();
-        $categorias = $this->categorias->where('activo',1)->findALL();
-        $data = ['titulo' => 'Editar Producto', 'datos' => $cliente,
-                 'categorias' => $categorias];
+        $data = ['titulo' => 'Editar Cliente', 'datos' => $cliente, 'validation' => $this->validator];
 
         echo view('header');
         echo view('clientes/editar',$data);
@@ -122,31 +119,13 @@ class ClientesController extends BaseController
 
     public function actualizar()
     {
-        if($this->request->getMethod() == "post" && $this->validate($this->reglas))
-        {
-            $this->clientes->update($this->request->getPost('id'),[
-                'nombre' => $this->request->getPost('nombre'),
-                'nombre_producto' => $this->request->getPost('nombre_producto'),
-                'detalle_producto' => $this->request->getPost('detalle_producto'),
-                'precio_venta' => $this->request->getPost('precio_venta'),
-                'precio_compra' => $this->request->getPost('precio_compra'),
-                'stock_producto' => $this->request->getPost('stock_producto'),
-                'stock_minimo' => $this->request->getPost('stock_minimo'),
-                'id_categoria' => $this->request->getPost('id_categoria'),
+        $this->clientes->update($this->request->getPost('id'),[
+            'nombre' => $this->request->getPost('nombre'),
+            'direccion' => $this->request->getPost('direccion'),
+            'telefono' => $this->request->getPost('telefono'),
+            'email' => $this->request->getPost('email'),
         ]);
         return redirect()->to(base_url().'/clientes');
-        }
-        else
-        {
-            $cliente = $this->clientes->where('id',$this->request->getPost('id'))->first();
-            $categorias = $this->categorias->where('activo',1)->findALL();
-            $data = ['titulo' => 'Editar Producto', 'datos' => $cliente,
-                     'categorias' => $categorias, 'validation' => $this->validator];
-
-            echo view('header');
-            echo view('clientes/editar',$data);
-            echo view('footer');
-        }
     }
 
     public function eliminar($id)

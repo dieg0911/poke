@@ -8,7 +8,7 @@
 
     <div>
         <p>
-            <a href="<?php echo base_url(); ?>/productos" class="btn btn-warning">Productos</a>
+            <a href="<?php echo base_url(); ?>/clientes" class="btn btn-warning">clientes</a>
         </p>
     </div>
 
@@ -31,15 +31,14 @@
                     <tbody>
                         <?php foreach($datos as $dato) { ?>
                         <tr>
-                            <td><?php echo $dato['id']; ?></td>
-                            <td><?php echo $dato['codigo_producto']; ?></td>
-                            <td><?php echo $dato['nombre_producto']; ?></td>
-                            <td><?php echo $dato['detalle_producto']; ?></td>
-                            <td><?php echo $dato['precio_venta']; ?></td>
-                            <td><?php echo $dato['stock_producto']; ?></td>
-                            <td><?php echo $dato['stock_minimo']; ?></td>
+                        <td><?php echo $dato['id']; ?></td>
+                            <td><?php echo $dato['nombre']; ?></td>
+                            <td><?php echo $dato['direccion']; ?></td>
+                            <td><?php echo $dato['telefono']; ?></td>
+                            <td><?php echo $dato['email']; ?></td>
+
                             <td>
-                                <a href="<?php echo site_url('reingresarp/'. $dato['id']); ?>" class="btn btn-success"><i class="fas fa-trash-restore"></i></a>
+                                <a href="<?php echo site_url('reingresarc/'. $dato['id']); ?>" class="btn btn-success"><i class="fas fa-trash-restore"></i></a>
                             </td>
                         </tr>
                         <?php ; }?>
