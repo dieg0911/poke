@@ -40,8 +40,6 @@ class ProductosController extends BaseController
     public function nuevo()
     {
         $categorias = $this->categorias->where('activo',1)->findALL();
-
-
         $data = ['titulo' => 'Agregar Producto', 'categorias' => $categorias];
 
         echo view('header');
@@ -52,19 +50,25 @@ class ProductosController extends BaseController
     
     public function insertar()
     {
-        $this->productos->save([
-            'codigo_producto' => $this->request->getPost('codigo_producto'),
-            'nombre_producto' => $this->request->getPost('nombre_producto'),
-            'detalle_producto' => $this->request->getPost('detalle_producto'),
-            'precio_venta' => $this->request->getPost('precio_venta'),
-            'precio_compra' => $this->request->getPost('precio_compra'),
-            'stock_producto' => $this->request->getPost('stock_producto'),
-        ]);
-        return redirect()->to(base_url().'/productos');
+
+
+            $this->productos->save([
+                'codigo_producto' => $this->request->getPost('codigo_producto'),
+                'nombre_producto' => $this->request->getPost('nombre_producto'),
+                'detalle_producto' => $this->request->getPost('detalle_producto'),
+                'precio_venta' => $this->request->getPost('precio_venta'),
+                'precio_compra' => $this->request->getPost('precio_compra'),
+                'stock_producto' => $this->request->getPost('stock_producto'),
+                'stock_minimo' => $this->request->getPost('stock_minimo'),
+                'id_categoria' => $this->request->getPost('id_categoria'),
+            ]);
+
+            return redirect()->to(base_url().'/productos');
     }
 
     public function editar($id)
     {
+        $categorias = $this->categorias->where('activo',1)->findALL();
         $producto = $this->productos->where('id',$id)->first();
         $data = ['titulo' => 'Editar Productos', 'datos' => $producto];
 
