@@ -25,11 +25,13 @@
                             <th>Nombre</th>
                             <th>Detalle</th>
                             <th>Precio</th>
-                            <th>Existencias</th>
+                            <th>Stock</th>
+                            <th>Stock Minimo</th>
                             <th></th>
                             <th></th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <?php foreach($datos as $dato) { ?>
                         <tr>
@@ -39,8 +41,13 @@
                             <td><?php echo $dato['detalle_producto']; ?></td>
                             <td><?php echo $dato['precio_venta']; ?></td>
                             <td><?php echo $dato['stock_producto']; ?></td>
+                            <td><?php echo $dato['stock_minimo']; ?></td>
+
                             <td>
-                                <a href="<?php echo site_url('editar-form/'. $dato['id']); ?>" class="btn btn-success">Editar<i class="fas fa-pencil-alt"></i></a>
+                                <a href="<?php echo site_url('editar/'. $dato['id']); ?>" class="btn btn-success">Editar<i class="fas fa-edit"></i></a>
+                            </td>
+
+                            <td>
                                 <a href="<?php echo site_url('eliminar/'. $dato['id']); ?>" class="btn btn-danger">Borrar<i class="fas fa-trash-alt"></i></a>
                             </td>
 

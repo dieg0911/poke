@@ -58,7 +58,7 @@ $routes->get('reingresar/(:num)', 'CategoriasController::reingresar/$1');
 // vista de la tabla de productos y eliminados
 $routes->get('productos/eliminados', 'ProductosController::eliminados');
 //agregar y guardar crud productos
-$routes->get('productos-form', 'ProductosController::nuevo');
+$routes->get('/productos-form', 'ProductosController::nuevo');
 $routes->post('insertp-form', 'ProductosController::insertar');
 // editar actualizar eliminar crud productos
 $routes->get('editar-form/(:num)', 'ProductosController::editar/$1');
