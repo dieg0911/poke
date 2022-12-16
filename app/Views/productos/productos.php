@@ -8,8 +8,8 @@
 
     <div>
         <p>
-            <a href="<?php echo site_url('/productos-form') ?>" class="btn btn-info">Agregar </a>
-            <a href="<?php echo base_url(); ?>/productos/eliminados" class="btn btn-danger">Eliminados </a>
+            <a href="<?php echo site_url('/productos-form') ?>" class="btn btn-success">Agregar </a>
+            <a href="<?php echo base_url(); ?>/productos/eliminados" class="btn btn-success">Eliminados </a>
         </p>
     </div>
 
