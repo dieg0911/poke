@@ -9,16 +9,16 @@
     <div>
         <p>
             <a href="<?php echo site_url('/categorias-form') ?>" class="btn btn-info">Agregar </a>
-            <a href="<?php echo base_url(); ?>/categorias/eliminados" class="btn btn-danger">Eliminados </a>
+            <a href="<?php echo base_url(); ?>/categorias/eliminados" class="btn btn-success">Eliminados </a>
         </p>
     </div>
 
     <!-- DataTales Example -->
-    <div class="card shadow mb-4">
+    <div class="card shadow mb-4 bg-success bg-gradient text-light">
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
+                <table class="table table-bordered text-light" id="dataTable" width="100%" cellspacing="0">
+                    <thead class="text-light">
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>

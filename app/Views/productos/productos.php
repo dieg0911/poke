@@ -8,18 +8,18 @@
 
     <div>
         <p>
-            <a href="<?php echo site_url('/productos-form') ?>" class="btn btn-success">Agregar </a>
+            <a href="<?php echo site_url('/productos-form') ?>" class="btn btn-info">Agregar </a>
             <a href="<?php echo base_url(); ?>/productos/eliminados" class="btn btn-success">Eliminados </a>
         </p>
     </div>
 
     <!-- DataTales Example -->
-    <div class="card shadow mb-4">
+    <div class="card shadow mb-4 bg-success bg-gradient text-light">
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                        <tr>
+                <table class="table table-bordered text-light" id="dataTable" width="100%" cellspacing="0">
+                    <thead class="text-light">
+                        <tr class="text-light">
                             <th>ID</th>
                             <th>Codigo</th>
                             <th>Nombre</th>
@@ -44,8 +44,8 @@
                             <td><?php echo $dato['stock_minimo']; ?></td>
 
                             <td>
-                            <a href="<?php echo site_url('editar/'. $dato['id']); ?>" class="btn btn-success">
-                                        <span class="icon text-white-50">
+                            <a href="<?php echo site_url('editar/'. $dato['id']); ?>" class="btn btn-warning">
+                                        <span class="icon text-white-65">
                                             <i class="fas fa-edit"></i>
                                         </span>
                                         <span class="text">Editar</span>
