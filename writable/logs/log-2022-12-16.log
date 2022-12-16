@@ -137,3 +137,75 @@ in SYSTEMPATH\BaseModel.php on line 729.
  6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
  7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:23:49 --> syntax error, unexpected token ","
+in APPPATH\Controllers\ClientesController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ClientesController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ClientesController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ClientesController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ClientesController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:34:14 --> Class "App\Models\ClientesModel" not found
+in APPPATH\Controllers\ClientesController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\ClientesController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:34:27 --> Class "App\Models\ClientesModel" not found
+in APPPATH\Controllers\ClientesController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\ClientesController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:34:59 --> Class "App\Models\ClientesModel" not found
+in APPPATH\Controllers\ClientesController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\ClientesController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:35:11 --> Class "App\Models\ClientesModel" not found
+in APPPATH\Controllers\ClientesController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\ClientesController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:54:06 --> Undefined property: App\Controllers\ClientesController::$categorias
+in APPPATH\Controllers\ClientesController.php on line 78.
+ 1 APPPATH\Controllers\ClientesController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ClientesController::$categorias', 'APPPATH\\Controllers\\ClientesController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ClientesController->nuevo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:56:53 --> Undefined property: App\Controllers\ClientesController::$categorias
+in APPPATH\Controllers\ClientesController.php on line 78.
+ 1 APPPATH\Controllers\ClientesController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ClientesController::$categorias', 'APPPATH\\Controllers\\ClientesController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ClientesController->nuevo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:56:55 --> Undefined property: App\Controllers\ClientesController::$categorias
+in APPPATH\Controllers\ClientesController.php on line 78.
+ 1 APPPATH\Controllers\ClientesController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ClientesController::$categorias', 'APPPATH\\Controllers\\ClientesController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ClientesController->nuevo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:58:24 --> Undefined property: App\Controllers\ClientesController::$categorias
+in APPPATH\Controllers\ClientesController.php on line 78.
+ 1 APPPATH\Controllers\ClientesController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ClientesController::$categorias', 'APPPATH\\Controllers\\ClientesController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ClientesController->nuevo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:58:52 --> Undefined variable $categorias
+in APPPATH\Views\clientes\nuevo.php on line 64.
+ 1 APPPATH\Views\clientes\nuevo.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'APPPATH\\Views\\clientes\\nuevo.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\nuevo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('clientes/nuevo', [], true)
+ 5 APPPATH\Controllers\ClientesController.php(81): view('clientes/nuevo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ClientesController->nuevo()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

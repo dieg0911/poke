@@ -41,6 +41,14 @@ $routes->get('/inicio', 'Home::index');
 $routes->get('/categorias', 'CategoriasController::index');
 $routes->get('/productos', 'ProductosController::index');
 
+//Rutas para el login
+$routes->get('/', 'SigninController::index');
+$routes->get('/signup', 'SignupController::index');
+$routes->match(['get', 'post'], 'SignupController/store', 'SignupController::store');
+$routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
+$routes->get('/signin', 'SigninController::index');
+$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+
 //CRUD CATEGORIAS
 // vista de la tabla de categorias y eliminados
 $routes->get('dataTable', 'InventarioController::index');
@@ -66,14 +74,10 @@ $routes->post('actualizarp', 'ProductosController::actualizar');
 $routes->get('eliminarp/(:num)', 'ProductosController::eliminar/$1');
 $routes->get('reingresarp/(:num)', 'ProductosController::reingresar/$1');
 
-//Rutas para el login
-$routes->get('/', 'SigninController::index');
-$routes->get('/signup', 'SignupController::index');
-$routes->match(['get', 'post'], 'SignupController/store', 'SignupController::store');
-$routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
-$routes->get('/signin', 'SigninController::index');
-$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
-
+//ruta para cliente
+$routes->get('/clientes', 'ClientesController::index');
+$routes->get('/clientes-form', 'ClientesController::nuevo');
+$routes->post('insertc-form', 'ClientesController::insertar');
 
 
 //

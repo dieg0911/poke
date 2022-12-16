@@ -85,11 +85,18 @@
                         <a class="collapse-item" href="<?php echo base_url();?>/categorias">Categorias</a>
 
                     </div>
+
                 </div>
             </li>
 
+
+
             <!-- Divider -->
             <hr class="sidebar-divider">
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url();?>/clientes"><i class="fa-solid fa-user"></i><span>CLientes </span> </a>
+            </li>
 
             <!-- Heading 
             <div class="sidebar-heading">
