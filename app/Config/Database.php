@@ -56,6 +56,8 @@ class Database extends Config
      *
      * @var array
      */
+
+     
     public $tests = [
         'DSN'         => '',
         'hostname'    => '127.0.0.1',

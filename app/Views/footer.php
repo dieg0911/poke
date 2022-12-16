@@ -33,6 +33,8 @@
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                 <a class="btn btn-primary" href="login.html">Aceptar</a>
             </div>
+
+            
         </div>
     </div>
 </div>

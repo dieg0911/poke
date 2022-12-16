@@ -37,6 +37,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 //                 clase::metodo
 
+
+
 $routes->get('/inicio', 'Home::index');
 $routes->get('/categorias', 'CategoriasController::index');
 $routes->get('/productos', 'ProductosController::index');
