@@ -50,13 +50,7 @@
                     </form>
 
 
-                    <p class="mb-1">
-                        <a href="<?php echo base_url(); ?>">¿Olvistaste la contraseña?</a>
-                    </p>
-                    <p class="mb-0">
-                        <a href="<?php echo base_url(); ?>/signup" class="text-center">Registrar un nuevo usuario</a>
 
-                    </p>
                 </div>
                 <!-- /.login-card-body -->
             </div>

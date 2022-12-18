@@ -8,7 +8,7 @@
 
     <div>
         <p>
-            <a href="<?php echo base_url(); ?>/clientes" class="btn btn-warning">clientes</a>
+            <a href="<?php echo base_url(); ?>/clientes" class="btn btn-warning">Clientes</a>
         </p>
     </div>
 
@@ -19,12 +19,10 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                     <th>ID</th>
-                            <th>Codigo</th>
-                            <th>Nombre</th>
-                            <th>Detalle</th>
-                            <th>Precio</th>
-                            <th>Stock</th>
-                            <th>Stock Minimo</th>
+                            <th>nombre</th>
+                            <th>direccion</th>
+                            <th>telefono</th>
+                            <th>email</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
